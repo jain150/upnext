@@ -10,6 +10,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var CoverImage: UIImageView!
     @IBOutlet weak var Song: UILabel!
     @IBOutlet weak var Description: UILabel!
     override func awakeFromNib() {

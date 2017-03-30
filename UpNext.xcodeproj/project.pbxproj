@@ -14,9 +14,12 @@
 		9005A31B1E8494460049F53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9005A3191E8494460049F53A /* LaunchScreen.storyboard */; };
 		9005A3251E8495C50049F53A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005A3241E8495C50049F53A /* TableViewCell.swift */; };
 		9005A3271E84A3B80049F53A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005A3261E84A3B80049F53A /* FirstViewController.swift */; };
+		92D0F36135DFDC5C6591F660 /* Pods_UpNext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F1A743C01FCFF29292FEFC /* Pods_UpNext.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C02FDC56FFF0FA642B88116 /* Pods-UpNext.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpNext.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UpNext/Pods-UpNext.debug.xcconfig"; sourceTree = "<group>"; };
+		67F1A743C01FCFF29292FEFC /* Pods_UpNext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpNext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9005A30D1E8494460049F53A /* UpNext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpNext.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9005A3101E8494460049F53A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9005A3121E8494460049F53A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		9005A31C1E8494460049F53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9005A3241E8495C50049F53A /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		9005A3261E84A3B80049F53A /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CCAA278906B432111C0C4F8D /* Pods-UpNext.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpNext.release.xcconfig"; path = "Pods/Target Support Files/Pods-UpNext/Pods-UpNext.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D0F36135DFDC5C6591F660 /* Pods_UpNext.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EC7552EB1F7D17B17C884BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C02FDC56FFF0FA642B88116 /* Pods-UpNext.debug.xcconfig */,
+				CCAA278906B432111C0C4F8D /* Pods-UpNext.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9005A3041E8494460049F53A = {
 			isa = PBXGroup;
 			children = (
 				9005A30F1E8494460049F53A /* UpNext */,
 				9005A30E1E8494460049F53A /* Products */,
+				6EC7552EB1F7D17B17C884BC /* Pods */,
+				BDD9D39337DB39CA088502BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +86,14 @@
 			path = UpNext;
 			sourceTree = "<group>";
 		};
+		BDD9D39337DB39CA088502BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67F1A743C01FCFF29292FEFC /* Pods_UpNext.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9005A31F1E8494460049F53A /* Build configuration list for PBXNativeTarget "UpNext" */;
 			buildPhases = (
+				6A88DF6A60839FC7525647CB /* [CP] Check Pods Manifest.lock */,
 				9005A3091E8494460049F53A /* Sources */,
 				9005A30A1E8494460049F53A /* Frameworks */,
 				9005A30B1E8494460049F53A /* Resources */,
+				3655886496EF72BD50CE6E5A /* [CP] Embed Pods Frameworks */,
+				F18D1D75B960FF6F507C3DC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,6 +164,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3655886496EF72BD50CE6E5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UpNext/Pods-UpNext-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A88DF6A60839FC7525647CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F18D1D75B960FF6F507C3DC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UpNext/Pods-UpNext-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9005A3091E8494460049F53A /* Sources */ = {
@@ -265,6 +340,7 @@
 		};
 		9005A3201E8494460049F53A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C02FDC56FFF0FA642B88116 /* Pods-UpNext.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TSCDBQM29F;
@@ -278,6 +354,7 @@
 		};
 		9005A3211E8494460049F53A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCAA278906B432111C0C4F8D /* Pods-UpNext.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TSCDBQM29F;

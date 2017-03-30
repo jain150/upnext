@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -22,6 +24,15 @@ class ViewController: UIViewController {
 
     @IBAction func onEnterClicked(_ sender: Any) {
         performSegue(withIdentifier: "enterSegue", sender: nil)
+    }
+    
+    
+    @IBAction func onLoginClicked(_ sender: Any) {
+        var player = AVPlayer()
+        let playerItem = AVPlayerItem(url: URL(string: "http://url.com/")!)
+        player = AVPlayer(playerItem: playerItem)
+        player.rate = 1.0;
+        player.play()
     }
 
 }
